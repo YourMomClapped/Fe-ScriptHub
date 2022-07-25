@@ -1,13 +1,13 @@
 local Player = game.Players.LocalPlayer
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Annon Hub", HidePremium = false, IntroEnabled = false, SaveConfig = false, SaveConfig = false, ConfigFolder = "Annon Hub"})
+local Window = OrionLib:MakeWindow({Name = "FE ScriptHub", HidePremium = false, IntroEnabled = false, SaveConfig = false, SaveConfig = false, ConfigFolder = "Annon Hub"})
 
 
 
 
 OrionLib:MakeNotification({
-	Name = "",
-	Content = "Notification content... what will it say??",
+	Name = "Fe ScriptHub",
+	Content = "Hey"..Player.Name.." welcome to FE ScriptHub",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
