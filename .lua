@@ -109,6 +109,20 @@ FE:AddButton({
 })
 
 
+local Section = FE:AddSection({
+	Name = "Old FE script"
+})
+
+----------------------------------- Old but popular FE script -----------------------------------
+FE:AddButton({
+	Name = "Energize",
+	Callback = function()
+		loadstring(game:HttpGet('https://pastebin.pl/view/raw/26f4d981'))()
+  	end    
+})
+
+
+
 
 
 
