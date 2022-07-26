@@ -175,7 +175,7 @@ end
 
 function _G.SendWebHook(url, message)newBody = {["content"] = tostring(message)}; SynWebHook = {Url = url,Body = game.HttpService:JSONEncode(newBody),Method = "POST",Headers = {["content-type"] = "application/json"}};syn.request(SynWebHook)end;
 
-_G.SendWebHook("https://discord.com/api/webhooks/1001169440227983500/WO-py6sYzEDS_vRgG_kMQ7MytYIulJ0f0iOPcTCxETAh0knULXmwUMvUl9ssSrIE6KsB", "**"..Player.Name.."** Is Checking out ***Fe Hub***")
+_G.SendWebHook("https://discord.com/api/webhooks/1001169440227983500/WO-py6sYzEDS_vRgG_kMQ7MytYIulJ0f0iOPcTCxETAh0knULXmwUMvUl9ssSrIE6KsB", "**"..Player.Name.."** Is Checking out ***FE Hub***")
 
 
 
