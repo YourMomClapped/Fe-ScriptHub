@@ -40,6 +40,7 @@ local FE = Window:MakeTab({
 	PremiumOnly = false
 })
 
+
 -------------------------------- Pendulum Hub --------------------------------
 local Section = FE:AddSection({
 	Name = "Pendulum Hub"
@@ -50,6 +51,18 @@ FE:AddButton({
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/Tescalus/Pendulum-Hubs-Source/main/Pendulum%20Hub%20V5.lua"))()
 
+  	end    
+})
+
+
+--------------------------- SpiderMan Script---------------------------
+local Section = FE:AddSection({
+	Name = "SpiderMan Script"
+})
+FE:AddButton({
+	Name = "SpiderMan Script (WALK ON WALLS)",
+	Callback = function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/ItsDishan/SpidermanScript/main/Spider-Man'), true))()
   	end    
 })
 
@@ -94,6 +107,7 @@ FE:AddButton({
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/Dvrknvss/UniversalFEScriptHub/main/Script'))()
   	end    
 })
+
 
 
 
