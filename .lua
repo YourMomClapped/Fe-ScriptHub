@@ -77,6 +77,25 @@ FE:AddButton({
 })
 
 
+FE:AddButton({
+	Name = "Emotes",
+	Callback = function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/5T7KsEWy", true))()
+  	end    
+})
+
+----------------------------------- Lostpoint FE Hub -----------------------------------
+local Section = FE:AddSection({
+	Name = "Lostpoint FE Hub"
+})
+FE:AddButton({
+	Name = "Lostpoint FE Hub",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/Dvrknvss/UniversalFEScriptHub/main/Script'))()
+  	end    
+})
+
+
 
 
 
