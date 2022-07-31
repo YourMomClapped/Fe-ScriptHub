@@ -8,7 +8,7 @@ local Window = OrionLib:MakeWindow({Name = "FE ScriptHub", HidePremium = false, 
 OrionLib:MakeNotification({
 	Name = "Fe ScriptHub",
 	Content = "Hey"..Player.Name.." welcome to FE ScriptHub",
-	Image = "rbxassetid://4483345998",
+	Image = "rbxassetid://9411304331",
 	Time = 5
 })
 
@@ -16,7 +16,7 @@ function goingback()
 OrionLib:MakeNotification({
 	Name = "Annon Hub",
 	Content = "Going back to Annon Hub.",
-	Image = "rbxassetid://4483345998",
+	Image = "rbxassetid://4384406773",
 	Time = 5
 	})
 end
@@ -36,7 +36,7 @@ end
 
 local FE = Window:MakeTab({
 	Name = "FE Scripts",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://3944704135",
 	PremiumOnly = false
 })
 
@@ -143,7 +143,7 @@ FE:AddButton({
 
 local Back = Window:MakeTab({
 	Name = "Go back",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://4384406773",
 	PremiumOnly = false
 })
 local Section = Back:AddSection({
