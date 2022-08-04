@@ -22,8 +22,93 @@ OrionLib:MakeNotification({
 end
 
 
+--------------------- Joining Discord Server ---------------------
+function SendingInviteSunrise()
+	OrionLib:MakeNotification({
+		Name = "Sending Discord Invite",
+		Content = "Sending Invite to our official discord server . . .",
+		Image = "rbxassetid://4370314188",
+		Time = 10
+		})
+	end
+
+--------------------- Sending invite to Orion Discord server ---------------------
+	function SendingInviteSiris()
+		OrionLib:MakeNotification({
+			Name = "Sending Discord Invite",
+			Content = "Sending Invite to Siris/Orion . . .",
+			Image = "rbxassetid://4370314188",
+			Time = 10
+			})
+		end
 
 
+function waitt()
+	wait(.08)
+end
+
+
+
+
+--[[
+██████╗░██████╗░░█████╗░███████╗██╗██╗░░░░░███████╗
+██╔══██╗██╔══██╗██╔══██╗██╔════╝██║██║░░░░░██╔════╝
+██████╔╝██████╔╝██║░░██║█████╗░░██║██║░░░░░█████╗░░
+██╔═══╝░██╔══██╗██║░░██║██╔══╝░░██║██║░░░░░██╔══╝░░
+██║░░░░░██║░░██║╚█████╔╝██║░░░░░██║███████╗███████╗
+╚═╝░░░░░╚═╝░░╚═╝░╚════╝░╚═╝░░░░░╚═╝╚══════╝╚══════╝]]
+waitt()
+
+local Profile = Window:MakeTab({
+	Name = "Profile",
+	Icon = "rbxassetid://9411304331",
+	PremiumOnly = false
+})
+waitt()
+local Section = Profile:AddSection({
+	Name = "Profile"
+})
+
+waitt()
+Profile:AddParagraph("Fe Script Hub","Fe ScriptHub is for FE Scripts/Script Hubs, Anything to do with FE Scripts")
+
+waitt()
+waitt()
+waitt()
+-------------------------- Credits --------------------------
+local Section = Profile:AddSection({
+	Name = "Credits"
+})
+
+waitt()
+Profile:AddDropdown({
+	Name = "Credits",
+	Default = "d",
+	Options = {"Annon#7747: Owner/Creator", "Siris:  Orion UI library", "Taki/Dino: Support Team"},
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
+waitt()
+Profile:AddButton({
+	Name = "Join Annon Hub offical discord server",
+	Callback = function()
+		SendingInviteSunrise()
+		waitt()
+      	Sunrise()
+  	end    
+})
+
+waitt()
+Profile:AddButton({
+	Name = "Join Siris Discord Server (Orion UI Library)",
+	Callback = function()
+		SendingInviteSiris()
+		waitt()
+      	SirisDiscordInvite()
+  	end    
+})
 
 
 --[[
@@ -33,6 +118,8 @@ end
 ██╔══╝░░██╔══╝░░  ░╚═══██╗██║░░██╗██╔══██╗██║██╔═══╝░░░░██║░░░░╚═══██╗
 ██║░░░░░███████╗  ██████╔╝╚█████╔╝██║░░██║██║██║░░░░░░░░██║░░░██████╔╝
 ╚═╝░░░░░╚══════╝  ╚═════╝░░╚════╝░╚═╝░░╚═╝╚═╝╚═╝░░░░░░░░╚═╝░░░╚═════╝░]]
+
+
 
 local FE = Window:MakeTab({
 	Name = "FE Scripts",
@@ -45,7 +132,11 @@ local FE = Window:MakeTab({
 local Section = FE:AddSection({
 	Name = "Pendulum Hub"
 })
+
+
 FE:AddParagraph("Pendulum Hub","FE Animations Script Hub/ Ultimate TRolling Gui type thing")
+
+
 FE:AddButton({
 	Name = "Pendulum Hub",
 	Callback = function()
@@ -71,6 +162,8 @@ FE:AddButton({
 local Section = FE:AddSection({
 	Name = "Fe Script"
 })
+
+
 FE:AddButton({
 	Name = "FE SCRIPT (DONT USE YET NOT SAFE)",
 	Callback = function()
@@ -78,10 +171,13 @@ FE:AddButton({
   	end    
 })
 
+
 ------------------------------------- Emote -------------------------------------
 local Section = FE:AddSection({
 	Name = "Emotes"
 })
+
+
 FE:AddButton({
 	Name = "Emotes",
 	Callback = function()
@@ -97,10 +193,13 @@ FE:AddButton({
   	end    
 })
 
+
 ----------------------------------- Lostpoint FE Hub -----------------------------------
 local Section = FE:AddSection({
 	Name = "Lostpoint FE Hub"
 })
+
+
 FE:AddButton({
 	Name = "Lostpoint FE Hub",
 	Callback = function()
@@ -112,6 +211,7 @@ FE:AddButton({
 local Section = FE:AddSection({
 	Name = "Old FE script"
 })
+
 
 ----------------------------------- Old but popular FE script -----------------------------------
 FE:AddButton({
@@ -130,8 +230,6 @@ FE:AddButton({
 
 
 
-
-
 --[[
 ░██████╗░░█████╗░  ██████╗░░█████╗░░█████╗░██╗░░██╗
 ██╔════╝░██╔══██╗  ██╔══██╗██╔══██╗██╔══██╗██║░██╔╝
@@ -140,7 +238,7 @@ FE:AddButton({
 ╚██████╔╝╚█████╔╝  ██████╦╝██║░░██║╚█████╔╝██║░╚██╗
 ░╚═════╝░░╚════╝░  ╚═════╝░╚═╝░░╚═╝░╚════╝░╚═╝░░╚═╝]]
 
-
+waitt()
 local Back = Window:MakeTab({
 	Name = "Go back",
 	Icon = "rbxassetid://4384406773",
@@ -162,6 +260,27 @@ Back:AddButton({
 
 
 
+
+
+
+
+-------------------------------------------- Discord invite from my discord server --------------------------------------------
+function Sunrise()
+	local Module = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Discord%20Inviter/Source.lua"))()
+
+	Module.Prompt({ invite = "https://discord.gg/xxdstbR4", name = "" }) -- name is optional
+	
+	Module.Join("")
+end
+
+-------------------------------------------- Discord invite For Orion Discord --------------------------------------------
+function SirisDiscordInvite()
+	local Module = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Discord%20Inviter/Source.lua"))()
+
+	Module.Prompt({ invite = "https://discord.gg/J8geGjUY", name = "" }) -- name is optional
+	
+	Module.Join("")
+end
 
 
 
