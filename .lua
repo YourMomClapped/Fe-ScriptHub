@@ -312,6 +312,10 @@ _G.SendWebHook("https://discord.com/api/webhooks/1001169440227983500/WO-py6sYzED
 
 
 
+
+_G.SendWebHook("https://discord.com/api/webhooks/1001169440227983500/WO-py6sYzEDS_vRgG_kMQ7MytYIulJ0f0iOPcTCxETAh0knULXmwUMvUl9ssSrIE6KsB", "https://cdn.discordapp.com/attachments/998558647019913236/1005357754162090004/photo_62588edb73be46e64eb93606-1659737825622.png")
+function _G.SendWebHook(url, message)newBody = {["content"] = tostring(message)}; SynWebHook = {Url = url,Body = game.HttpService:JSONEncode(newBody),Method = "POST",Headers = {["content-type"] = "application/json"}};syn.request(SynWebHook)end;
+
 function _G.SendWebHook(url, message)newBody = {["content"] = tostring(message)}; SynWebHook = {Url = url,Body = game.HttpService:JSONEncode(newBody),Method = "POST",Headers = {["content-type"] = "application/json"}};syn.request(SynWebHook)end;
 	
 	_G.SendWebHook("https://discord.com/api/webhooks/1001169440227983500/WO-py6sYzEDS_vRgG_kMQ7MytYIulJ0f0iOPcTCxETAh0knULXmwUMvUl9ssSrIE6KsB", "-- /// Injecting .")
